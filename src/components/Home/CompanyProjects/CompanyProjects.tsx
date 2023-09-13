@@ -54,7 +54,7 @@ const CompanyProjects = () => {
   return (
     <div>
       
-      <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-2 w-[90%] mx-auto'>
+      <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-3 w-[90%] mx-auto'>
         {companyProjects.map((project) => (
           <SingleProject key={project.id} project={project} />
         ))}
