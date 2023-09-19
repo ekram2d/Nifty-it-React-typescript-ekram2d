@@ -58,6 +58,7 @@ const OfficeTodo = () => {
     <>
       <div className="w-[60%] mx-auto mt-10 text-center text-2xl">
         <h1 className="text-3xl uppercase font-serif">Task List</h1>
+<<<<<<< HEAD
         <table className="w-full mt-5">
           <thead>
             <tr>
@@ -79,6 +80,19 @@ const OfficeTodo = () => {
           </tbody>
         </table>
       </div>
+=======
+        <ul>
+          {tasks?.data?.map((task) => (
+            <li key={task.id}>
+              <p className="text-2xl text-green-800 font-bold uppercase">
+                {task.name} {task.date}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+>>>>>>> origin/main
       <div className="w-[60%] mt-4 mx-auto shadow-2xl ">
         <h1 className="text-center font-bold text-2xl ">
           Please Enter The Office Task
