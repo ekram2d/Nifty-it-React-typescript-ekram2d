@@ -13,9 +13,9 @@ interface AddTaskAction {
   type: "add";
   payload: Data;
 }
+export type OfficeTodoAction = AddTaskAction;
 export interface Inputs {
   textList: string;
   submissionDate: string;
 }
 
-export type OfficeTodoAction = AddTaskAction;
