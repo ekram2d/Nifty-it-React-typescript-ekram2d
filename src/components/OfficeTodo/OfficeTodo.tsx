@@ -58,7 +58,6 @@ const OfficeTodo = () => {
     <>
       <div className="w-[60%] mx-auto mt-10 text-center text-2xl">
         <h1 className="text-3xl uppercase font-serif">Task List</h1>
-<<<<<<< HEAD
         <table className="w-full mt-5">
           <thead>
             <tr>
@@ -80,19 +79,6 @@ const OfficeTodo = () => {
           </tbody>
         </table>
       </div>
-=======
-        <ul>
-          {tasks?.data?.map((task) => (
-            <li key={task.id}>
-              <p className="text-2xl text-green-800 font-bold uppercase">
-                {task.name} {task.date}
-              </p>
-            </li>
-          ))}
-        </ul>
-      </div>
-
->>>>>>> origin/main
       <div className="w-[60%] mt-4 mx-auto shadow-2xl ">
         <h1 className="text-center font-bold text-2xl ">
           Please Enter The Office Task
@@ -101,7 +87,7 @@ const OfficeTodo = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="w-[90%] flex justify-center items-center pt-2 ">
             <input
-              className="bg-black text-white p-4 font-bold text-center rounded-xl shadow-2xl  pt-4 w-[40%] mx-auto "
+              className="bg-black text-white p-4 font-bold  rounded-xl shadow-2xl  pt-4 w-[40%] mx-auto "
               placeholder="please enter your task"
               defaultValue=""
               {...register("textList", { required: true })}
@@ -116,7 +102,7 @@ const OfficeTodo = () => {
           <div className="w-[90%] flex justify-center items-center">
             <input
               type="date"
-              className="bg-black text-white p-4 fk font-bold text-center rounded-xl shadow-2xl  pt-2 w-[40%] mx-auto "
+              className="bg-black text-white p-4 fk font-bold  rounded-xl shadow-2xl  pt-2 w-[40%] mx-auto "
               placeholder="Enter Submission Date"
               {...register("submissionDate", { required: true })}
             />
