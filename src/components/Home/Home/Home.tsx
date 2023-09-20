@@ -1,7 +1,8 @@
 
 import CompanyProjects from '../CompanyProjects/CompanyProjects';
 import CompanyMembers from '../CompanyMembers/CompanyMembers';
-import OfficeTodo from '../../OfficeTodo/OfficeTodo';
+import OfficeTodo from '../../OfficeTodo/OfficeTodo'
+import UserDefinedProps from '../../UserDefinedProps/UserDefinedProps';
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
                   </section>
 
                   <OfficeTodo/>
+                  <UserDefinedProps/>
 
             </div>
       );
