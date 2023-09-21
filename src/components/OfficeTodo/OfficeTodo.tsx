@@ -24,6 +24,15 @@ const reducer = (state: State, action: OfficeTodoAction) => {
       data: allTasks,
     };
   }
+  if (action.type === 'delete') {
+   const filterTask = state?.data?.filter(task=> task.id != action.payload)
+   console.log(filterTask)
+   return {
+    ...state,
+    data: filterTask
+   }
+
+  }
 
   // Your reducer logic here
   return state; // Make sure to return the state if no action type matches
@@ -53,6 +62,11 @@ const OfficeTodo = () => {
     reset();
   };
 
+  const HandleDelete = (id: number) => {
+    dispatch({type:'delete',payload: id});
+
+  }
+
 
   return (
     <>
@@ -67,6 +81,9 @@ const OfficeTodo = () => {
               <th className="text-2xl text-green-800 font-bold uppercase p-3">
                 Submission Date
               </th>
+              <th className="text-2xl text-green-800 font-bold uppercase p-3">
+                Action
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -74,6 +91,12 @@ const OfficeTodo = () => {
               <tr key={task.id}>
                 <td className="p-3">{task.name}</td>
                 <td className="p-3">{task.date}</td>
+                <td> <button
+                  onClick={() => HandleDelete(task.id)} // Pass a function to onClick
+                  className="btn btn-sm  bg-red-400 text-white  "
+                >
+                  X
+                </button></td>
               </tr>
             ))}
           </tbody>

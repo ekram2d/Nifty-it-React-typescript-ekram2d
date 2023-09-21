@@ -1,4 +1,4 @@
-import React from 'react';
+
 import SingleMember from './SingleMember';
 export type members = {
       id: number,

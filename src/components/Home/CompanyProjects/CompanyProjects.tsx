@@ -1,4 +1,4 @@
-import React from 'react';
+
 import SingleProject from './SingleProject';
 
 export type Projects = {
