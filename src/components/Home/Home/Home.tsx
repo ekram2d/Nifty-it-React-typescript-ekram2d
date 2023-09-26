@@ -2,7 +2,9 @@
 import CompanyProjects from '../CompanyProjects/CompanyProjects';
 import CompanyMembers from '../CompanyMembers/CompanyMembers';
 import OfficeTodo from '../../OfficeTodo/OfficeTodo'
-import Count from '../../Count/Count';
+import { DarkmodeCounter } from '../../../features/darkmode/DarkmodeCounter';
+// import Count from '../../Count/Count';
+// import { Counter } from '../../../features/counter/Counter';
 
 
 const Home = () => {
@@ -20,8 +22,13 @@ const Home = () => {
                   </section>
 
                   <OfficeTodo/>
-                  <Count/>
-                  
+                  {/* <Count/> */}
+                  {/* <Counter/> */}
+
+                  <section>
+
+                      <DarkmodeCounter/>
+                  </section>
 
             </div>
       );

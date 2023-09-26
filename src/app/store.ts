@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from '../features/counter/counterSlice'
-
+import DarkmodeReducer from '../features/darkmode/darkModeSlice'
+console.log(DarkmodeReducer)
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    darkMode: DarkmodeReducer,
   },
 })
 
