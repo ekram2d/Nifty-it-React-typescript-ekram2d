@@ -25,17 +25,17 @@ const reducer = (state: State, action: OfficeTodoAction) => {
     };
   }
   if (action.type === 'delete') {
-   const filterTask = state?.data?.filter(task=> task.id != action.payload)
-   console.log(filterTask)
-   return {
-    ...state,
-    data: filterTask
-   }
+    const filterTask = state?.data?.filter(task => task.id != action.payload)
+    //  console.log(filterTask)
+    return {
+      ...state,
+      data: filterTask
+    }
 
   }
 
-  // Your reducer logic here
-  return state; // Make sure to return the state if no action type matches
+  
+  return state; 
 };
 
 
@@ -63,7 +63,7 @@ const OfficeTodo = () => {
   };
 
   const HandleDelete = (id: number) => {
-    dispatch({type:'delete',payload: id});
+    dispatch({ type: 'delete', payload: id });
 
   }
 
@@ -92,7 +92,7 @@ const OfficeTodo = () => {
                 <td className="p-3">{task.name}</td>
                 <td className="p-3">{task.date}</td>
                 <td> <button
-                  onClick={() => HandleDelete(task.id)} // Pass a function to onClick
+                  onClick={() => HandleDelete(task.id)}
                   className="btn btn-sm  bg-red-400 text-white  "
                 >
                   X

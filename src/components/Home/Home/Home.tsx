@@ -2,6 +2,7 @@
 import CompanyProjects from '../CompanyProjects/CompanyProjects';
 import CompanyMembers from '../CompanyMembers/CompanyMembers';
 import OfficeTodo from '../../OfficeTodo/OfficeTodo'
+import Count from '../../Count/Count';
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
                   </section>
 
                   <OfficeTodo/>
+                  <Count/>
                   
 
             </div>

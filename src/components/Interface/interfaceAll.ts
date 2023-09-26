@@ -13,7 +13,11 @@ interface AddTaskAction {
   type: "add";
   payload: Data;
 }
-export type OfficeTodoAction = AddTaskAction;
+interface DeleteAction {
+  type :"delete";
+  payload:number;
+}
+export type OfficeTodoAction = AddTaskAction | DeleteAction;
 export interface Inputs {
   textList: string;
   submissionDate: string;
