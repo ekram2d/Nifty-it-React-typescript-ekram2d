@@ -34,8 +34,8 @@ const reducer = (state: State, action: OfficeTodoAction) => {
 
   }
 
-  
-  return state; 
+
+  return state;
 };
 
 
