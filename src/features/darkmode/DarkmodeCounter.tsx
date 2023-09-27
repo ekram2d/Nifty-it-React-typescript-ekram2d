@@ -14,10 +14,10 @@ export function DarkmodeCounter() {
     <>
       <div>
         <button
-          className='btn btn-sm'
+          className='btn btn-sm bg-red-600 text-white '
           aria-label="Toggle Dark Mode"
           onClick={() => dispatch(toggleDarkMode())}
-        >Theme
+        >Theme Toggle
           {mode ? (
             <FontAwesomeIcon icon={faSun} /> // Light mode icon
           ) : (

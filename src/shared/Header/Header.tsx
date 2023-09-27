@@ -1,4 +1,5 @@
 import React from 'react';
+import { DarkmodeCounter } from '../../features/darkmode/DarkmodeCounter';
 
 const Header = () => {
       return (
@@ -15,6 +16,7 @@ const Header = () => {
                     <ul className="p-2">
                       <li><a>Submenu 1</a></li>
                       <li><a>Submenu 2</a></li>
+
                     </ul>
                   </li>
                   <li><a>Login</a></li>
@@ -38,7 +40,7 @@ const Header = () => {
               </ul>
             </div>
             <div className="navbar-end">
-              <a className="btn">Button</a>
+              <a className="btn">{<DarkmodeCounter/>}</a>
             </div>
           </div>
       );
