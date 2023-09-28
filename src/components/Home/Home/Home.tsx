@@ -4,6 +4,7 @@ import CompanyMembers from '../CompanyMembers/CompanyMembers';
 import OfficeTodo from '../../OfficeTodo/OfficeTodo'
 import { DarkmodeCounter } from '../../../features/darkmode/DarkmodeCounter';
 import Counter from '../../../features/counter/Counter';
+import Customer from '../../Graphql/CustomerUi/Customer';
 // import Count from '../../Count/Count';
 // import { Counter } from '../../../features/counter/Counter';
 
@@ -33,6 +34,10 @@ const Home = () => {
 
                   <section>
                         <Counter/>
+                  </section>
+
+                  <section>
+                        <Customer/>
                   </section>
 
             </div>
