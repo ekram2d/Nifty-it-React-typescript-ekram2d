@@ -4,7 +4,8 @@ import CompanyMembers from '../CompanyMembers/CompanyMembers';
 import OfficeTodo from '../../OfficeTodo/OfficeTodo'
 import { DarkmodeCounter } from '../../../features/darkmode/DarkmodeCounter';
 import Counter from '../../../features/counter/Counter';
-import Customer from '../../Graphql/CustomerUi/Customer';
+
+import RocketList from '../../Graphql/RocketUi/RocketList';
 // import Count from '../../Count/Count';
 // import { Counter } from '../../../features/counter/Counter';
 
@@ -23,21 +24,21 @@ const Home = () => {
                         <CompanyMembers />
                   </section>
 
-                  <OfficeTodo/>
+                  <OfficeTodo />
                   {/* <Count/> */}
                   {/* <Counter/> */}
 
                   <section>
 
-                      <DarkmodeCounter/>
+                        <DarkmodeCounter />
                   </section>
 
                   <section>
-                        <Counter/>
+                        <Counter />
                   </section>
 
                   <section>
-                        <Customer/>
+                        <RocketList />
                   </section>
 
             </div>

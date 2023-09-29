@@ -6,7 +6,8 @@ import { Provider } from 'react-redux'
 import { store } from './redux/store.ts'
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 const client = new ApolloClient({
-  uri: 'http://localhost:4000',
+  // uri: 'http://localhost:4000',
+  uri:"https://spacex-production.up.railway.app/",
   cache: new InMemoryCache(),
 });
 

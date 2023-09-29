@@ -23,3 +23,39 @@ export interface Inputs {
   submissionDate: string;
 }
 
+export interface Rocket {
+  active: boolean;
+  boosters: number;
+  company: string;
+  cost_per_launch: number;
+  country: string;
+  description: string;
+  diameter: Distance;
+  engines: RocketEngines;
+  first_flight: String;
+  first_stage: RocketFirstStage;
+  id: string; // Changed to lowercase "string"
+  mass: Mass;
+  success_rate_pct: number;
+}
+
+interface Mass {
+  kg: number;
+  lb: number;
+}
+
+interface Distance {
+  feet: number;
+  meters: number;
+}
+
+interface RocketEngines {
+  engine_loss_max: string; // Changed to lowercase "string"
+  layout: string;
+}
+
+interface RocketFirstStage {
+  burn_time_sec: number;
+  engines: number;
+  fuel_amount_tons: number;
+}
