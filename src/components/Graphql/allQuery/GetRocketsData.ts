@@ -1,8 +1,8 @@
+import { gql } from "@apollo/client";
 
-import { gql } from '@apollo/client';
 
 export const GET_Rockets = gql`
-query{
+query Rockets{
   rockets{
     active
     boosters
@@ -38,25 +38,35 @@ query{
 }
 
 `;
-// query getAllDatas{
-//       quotes{
-//         name
-//         by
-//       }
-//         customers{
-//           id
-//           name
-//           email
-//           phone
-//           address
-//           img
-//           quotes{
-//           name
-//             by
-            
+
+
+export const Get_Histores =  gql`
+query Histories{
+  histories{
+    details
+    event_date_unix
+    event_date_utc
+    flight{
+      details
+      id
+      is_tentative
+      launch_date_local
+      launch_date_utc
+       launch_success
       
-//           }
-          
-//         }
-//        great
-//       }
+    }
+    id
+    links{
+      article
+      reddit
+       wikipedia
+    }
+   title
+    
+  }
+  
+  }
+
+
+
+`

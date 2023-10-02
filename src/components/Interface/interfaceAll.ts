@@ -59,3 +59,18 @@ interface RocketFirstStage {
   engines: number;
   fuel_amount_tons: number;
 }
+
+export interface Link {
+  article: string;
+  reddit: string;
+  wikipedia: string;
+}
+
+export interface History {
+  details: string;
+  event_date_unix: string;
+  event_date_utc: string;
+  id: string;
+  links: Link;
+  title: string;
+}
