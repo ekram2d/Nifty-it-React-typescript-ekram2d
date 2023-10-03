@@ -7,7 +7,7 @@ import { store } from './redux/store.ts'
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 const client = new ApolloClient({
   // uri: 'http://localhost:4000',
-  uri:"https://spacex-production.up.railway.app/",
+  uri:import.meta.env.VITE_GRAPHQL_ENDPOINT,
   cache: new InMemoryCache(),
 });
 

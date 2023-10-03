@@ -4,9 +4,10 @@ import CompanyMembers from '../CompanyMembers/CompanyMembers';
 import OfficeTodo from '../../OfficeTodo/OfficeTodo'
 import { DarkmodeCounter } from '../../../features/darkmode/DarkmodeCounter';
 import Counter from '../../../features/counter/Counter';
+import RocketList from '../../../Graphql/RocketUi/RocketList';
+import Histories from '../../../Graphql/RocketUi/Histories/Histories';
 
-import RocketList from '../../Graphql/RocketUi/RocketList';
-import Histories from '../../Graphql/RocketUi/Histories/Histories';
+
 // import Count from '../../Count/Count';
 // import { Counter } from '../../../features/counter/Counter';
 
@@ -33,7 +34,7 @@ const Home = () => {
 
                         <DarkmodeCounter />
                   </section>
-
+                  
                   <section>
                         <Counter />
                   </section>
@@ -42,7 +43,7 @@ const Home = () => {
                         <RocketList />
                   </section>
                   <section>
-                        <Histories/>
+                        <Histories />
                   </section>
 
             </div>

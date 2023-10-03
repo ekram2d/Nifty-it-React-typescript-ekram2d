@@ -1,6 +1,8 @@
 // import { Rocket } from "../../Interface/interfaceAll";
 
-import { Rocket } from "../../../__generated__/graphql";
+import { Rocket } from "../__generated__/graphql";
+
+
 
 // import { Rocket } from "../../Interface/interfaceAll";
 
@@ -14,10 +16,11 @@ function RocketCard({ rocket }: { rocket: Rocket }) {
       const { engines } = rocket;
 
       const { first_stage } = rocket;
-      // console.log(diameter, engines, first_flight, mass)
+
 
       return (
             <div className="bg-white border rounded-md p-4 shadow-md">
+             
                   <h2 className="text-2xl font-bold mb-2">{rocket.company}</h2>
                   <div className="mb-4">
                         <span className="text-gray-600">Active: </span>

@@ -1,7 +1,10 @@
-import { gql } from "@apollo/client";
+import { gql } from "../__generated__";
 
 
-export const GET_Rockets = gql`
+
+
+
+export const GET_Rockets = gql(`
 query Rockets{
   rockets{
     active
@@ -10,6 +13,7 @@ query Rockets{
     cost_per_launch
     country
     description
+   
     diameter{
       feet
       meters
@@ -37,10 +41,10 @@ query Rockets{
 
 }
 
-`;
+`);
 
 
-export const Get_Histores =  gql`
+export const Get_Histores =  gql(`
 query Histories{
   histories{
     details
@@ -69,4 +73,4 @@ query Histories{
 
 
 
-`
+`);

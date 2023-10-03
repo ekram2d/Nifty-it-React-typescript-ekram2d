@@ -1,7 +1,9 @@
-import { useQuery } from '@apollo/client';
+// import { useQuery } from '@apollo/client';
 import RocketCard from './RocketCard';
 import { GET_Rockets } from '../allQuery/GetRocketsData';
-import { Rocket } from '../../../__generated__/graphql';
+
+import { useQuery } from '@apollo/client';
+import { Rocket } from '../__generated__/graphql';
 
 function RocketList() {
   const { loading, error, data } = useQuery(GET_Rockets);
